@@ -1,4 +1,4 @@
-[16:38, 02/10/2024] Luiz Philipe: /* Reset básico */
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +11,8 @@ body {
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradiente moderno */
     color: #333;
     line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
 /* Cabeçalho fixo */
@@ -25,47 +27,6 @@ header {
     top: 0;
     z-index: 1000;
     transition: background-color 0.5s ease;
-}
-
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    transition: font-size 0.5s ease;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justif…
-[16:43, 02/10/2024] Luiz Philipe: /* Reset básico */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Corpo da página */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradiente moderno */
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Cabeçalho fixo */
-header {
-    background: rgba(44, 62, 80, 0.9);
-    color: #ecf0f1;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background-color 0.5s ease;
-    height: 80px; /* Definindo altura fixa para o cabeçalho */
 }
 
 header h1 {
@@ -101,7 +62,7 @@ nav a:hover {
 /* Estilo principal */
 main {
     max-width: 900px;
-    margin: 100px auto 30px; /* Ajuste para evitar sobreposição */
+    margin: 150px auto 30px; /* Aumentada a margem superior para evitar sobreposição do header */
     padding: 25px;
     background: #fff;
     border-radius: 10px;
@@ -186,28 +147,6 @@ footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Botões de seleção de idioma */
-.language-switch {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.language-btn {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.language-btn:hover {
-    background-color: #2980b9;
-}
-
 /* Media Queries para dispositivos menores */
 @media (max-width: 768px) {
     nav ul {
@@ -224,7 +163,7 @@ footer {
     }
 
     main {
-        margin: 160px 10px 30px; /* Aumenta a margem superior para evitar sobreposição */
+        margin: 160px 10px 30px; /* Ajuste adicional para evitar sobreposição */
         padding: 20px;
     }
 
@@ -253,7 +192,7 @@ footer {
     }
 
     main {
-        margin: 160px 10px 30px; /* Ajuste adicional para evitar sobreposição */
+        margin: 160px 10px 30px; /* Mais ajuste de margem */
         padding: 15px;
     }
 
