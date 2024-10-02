@@ -1,0 +1,211 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradiente moderno */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho fixo */
+header {
+    background: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    transition: font-size 0.5s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7979;
+}
+
+/* Estilo principal */
+main {
+    max-width: 900px;
+    margin: 150px auto 30px; /* Aumentada a margem superior para evitar sobreposição do header */
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+main:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos das seções */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    letter-spacing: 1.5px;
+}
+
+/* Seção de Experiência com Cards */
+.experience-card {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.experience-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li i {
+    margin-right: 10px;
+}
+
+/* Seção de Contato */
+#contato ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato ul li {
+    font-size: 1.1em;
+}
+
+#contato ul li a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contato ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2c3e50;
+    color: #ecf0f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    main {
+        margin: 160px 10px 30px; /* Ajuste adicional para evitar sobreposição */
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .experience-card {
+        padding: 15px;
+    }
+}
+
+/* Media Queries para dispositivos muito pequenos (mobile) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        margin: 160px 10px 30px; /* Mais ajuste de margem */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .experience-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
