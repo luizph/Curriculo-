@@ -1,2 +1,2 @@
-# Curr-culo-
+# Curriculo-
 Currículo statico com HTML,CSS E JS
